@@ -1,0 +1,86 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:orientation="vertical"
+    android:layout_height="fill_parent"
+    android:padding="16dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Amount : "
+            android:textSize="25sp"
+            android:textColor="@android:color/white"
+            android:gravity="right"
+            android:layout_weight="1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="₹"
+            android:textSize="25sp"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/totalAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="total"
+            android:textColor="@android:color/white"
+            android:textSize="25sp"
+            android:textStyle="bold"
+
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/CartScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="300dp">
+
+        <LinearLayout
+            android:id="@+id/CartLinearLayout"
+            android:layout_width="match_parent"
+
+            android:layout_height="200dp"
+            android:orientation="vertical">
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="right"
+        android:layout_width="match_parent">
+
+        <Button
+            android:id="@+id/dialogButtonCancel"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:backgroundTint="@color/colorAccent"
+            android:textColor="@android:color/white"
+            android:text=" Cancel " />
+
+        <Button
+            android:id="@+id/dialogButtonOK"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@color/colorAccent"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:text=" Pre-Order" />
+
+    </LinearLayout>
+
+</LinearLayout>

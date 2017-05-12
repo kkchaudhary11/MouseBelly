@@ -1,0 +1,124 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:orientation="vertical"
+    android:layout_height="fill_parent"
+    android:padding="16dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="Order ID : "
+            android:textColor="@android:color/white"
+            android:textSize="22sp" />
+
+
+        <TextView
+            android:id="@+id/order_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="total"
+            android:textColor="@android:color/white"
+            android:textSize="22sp"
+
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:padding="4dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="Rating : "
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+
+        <TextView
+            android:id="@+id/product_rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="total"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+    <ScrollView
+        android:id="@+id/ProductsScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="300dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ProductsLinearLayout"
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:orientation="vertical"></LinearLayout>
+
+            <EditText
+                android:id="@+id/review"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Review"
+                android:visibility="gone" />
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="right"
+        android:layout_width="match_parent">
+
+        <Button
+            android:id="@+id/dialogButtonCancel"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:backgroundTint="@color/colorAccent"
+            android:textColor="@android:color/white"
+            android:text=" Cancel " />
+
+        <Button
+            android:id="@+id/dialogButtonOK"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@color/colorAccent"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:text="Submit" />
+
+    </LinearLayout>
+
+</LinearLayout>

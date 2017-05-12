@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/view_profile"
+            android:icon="@drawable/user_profile"
+            android:title="My Profile" />
+
+        <item
+            android:id="@+id/wallet"
+            android:icon="@drawable/wallet"
+            android:title="Wallet" />
+
+        <item
+            android:id="@+id/mealplanner"
+            android:icon="@drawable/mealplan"
+            android:title="Meal Planner" />
+
+        <item
+            android:id="@+id/view_order"
+            android:icon="@drawable/vieworder"
+            android:title="Orders Stack" />
+
+        <item
+            android:id="@+id/view_pre_order"
+            android:icon="@drawable/vieworder"
+            android:title="Pre Orders Stack" />
+
+        <item
+            android:id="@+id/nav_fav"
+            android:icon="@drawable/favorite"
+            android:title="Favorite" />
+
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/logout"
+            android:title="Logout" />
+        <!--<item
+            android:id="@+id/nav_setting"
+            android:icon="@drawable/setting"
+            android:title="Setting" />-->
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_feedback"
+                android:icon="@drawable/feedback"
+                android:title="Feedback" />
+            <!--<item
+                android:id="@+id/nav_aboutus"
+                android:icon="@drawable/info"
+
+                android:title="About Us" />-->
+
+        </menu>
+    </item>
+
+</menu>

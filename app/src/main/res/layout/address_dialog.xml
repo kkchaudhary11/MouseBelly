@@ -1,0 +1,244 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    android:layout_gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:background="@drawable/edittextstyle">
+
+            <!--<TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Username : "
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:textSize="16dp" />-->
+
+            <EditText
+                android:layout_width="match_parent"
+                android:id="@+id/streetname"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:maxLines="1"
+                android:inputType="textCapSentences"
+                android:hint="Street Name"
+                android:background="@android:color/transparent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/adderrusername"
+                android:textColor="#f70404"
+                android:textStyle="bold"
+                android:visibility="gone"
+                android:textSize="12dp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="16dp"
+            android:padding="10dp"
+            android:background="@drawable/edittextstyle">
+
+            <!--<TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Zip Code : "
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:textSize="16dp"/>-->
+            <EditText
+                android:id="@+id/zipcode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:hint="Zip Code"
+                android:inputType="number"
+                android:maxLines="1"
+                android:maxLength="6"
+                android:selectAllOnFocus="false"
+                android:singleLine="true"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/adderroremail"
+                android:textColor="#f70404"
+                android:textStyle="bold"
+                android:visibility="gone"
+                android:textSize="12dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/edittextstyle"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <!-- <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="Password : "
+                 android:textColor="#000000"
+                 android:textStyle="bold"
+                 android:textSize="16dp"/>-->
+
+            <EditText
+                android:id="@+id/statename"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:inputType="textCapSentences"
+                android:ems="10"
+                android:maxLines="1"
+                android:hint="State Name"
+                android:singleLine="true" />
+
+            <TextView
+                android:id="@+id/addpass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#f70404"
+                android:textSize="12dp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="16dp"
+            android:padding="10dp"
+            android:background="@drawable/edittextstyle">
+
+            <!-- <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="Confirm Password : "
+                 android:textStyle="bold"
+                 android:textColor="#000000"
+                 android:textSize="16dp"/>-->
+
+            <EditText
+                android:id="@+id/cityname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:ems="10"
+                android:maxLines="1"
+                android:inputType="textCapSentences"
+                android:hint="City Name"
+                android:singleLine="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/addcnf"
+                android:textColor="#f70404"
+                android:textStyle="bold"
+                android:visibility="gone"
+                android:textSize="12dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="16dp"
+            android:padding="10dp"
+            android:background="@drawable/edittextstyle">
+
+            <!--<TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phone Number : "
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:textSize="16dp"/>-->
+
+            <EditText
+                android:id="@+id/country"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:hint="Country"
+                android:inputType="textCapSentences"
+                android:maxLines="1"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/addphn"
+                android:textColor="#f70404"
+                android:textStyle="bold"
+                android:visibility="gone"
+                android:textSize="12dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginTop="16dp">
+
+            <!--     <Button
+                     android:layout_weight="1"
+                     android:id="@+id/cancle"
+                     android:layout_height="wrap_content"
+                     android:backgroundTint="@color/colorPrimaryDark"
+                     android:textColor="@android:color/white"
+                     android:layout_width="match_parent"
+
+                     android:text=" Cancel "
+                     />-->
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/ok"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:textColor="@color/Rose_White"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_gravity="right"
+        android:textStyle="bold"
+        android:background="@color/Rose_White"
+        android:text="FIND" />
+
+</LinearLayout>
